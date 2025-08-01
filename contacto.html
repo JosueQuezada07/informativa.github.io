@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>La Inmaculada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container"><img src="img\logo inmaculada.png" alt="logo" style="width: 70px;">
+            <div class="logo">La Inmaculada</div> 
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-dropdown">
+                <button id="dropdownBtn" class="dropdown-btn" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="dropdownMenu" class="dropdown-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+
+            </div>
+            <!-- Formulario de contacto -->
+                <form class="contact-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <div class="container">
+                    <h2 class="section-title">Contactanos!!!</h2>
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-location-dot fa-2x icon-primary"></i>
+                            <h3>Dirección</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.5177421897201!2d-78.04445490426981!3d-7.813405181805824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ade4eb05b1e1eb%3A0xa81a616dd274ee87!2sIE.%2080779%20LA%20INMACULADA!5e0!3m2!1ses-419!2spe!4v1754033302774!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-mobile-screen fa-2x icon-primary"></i>
+                            <h3>Teléfono</h3>
+                            <p>+51 910880934 <br><br> Escribenos o llamanos para mas informacion y separa tu bacante ya.
+
+                            </p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-paper-plane fa-2x icon-primary"></i>
+                            <h3>Email</h3>
+                            <p>I.E.80779.lainmaculada@gmail.com<br></p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="logo" style="color: white;">La Inmaculada</div>
+            <p>Formando líderes para el mañana</p>
+            
+            <div class="social-links">
+                <a href="https://web.facebook.com/anonimo732022" target="_blank" class="social-icon-fb" aria-label="Síguenos en Facebook">
+                    <i class="fab fa-facebook-f"></i>
+            </div>
+            
+            <p class="copyright">© 2025 I.E "La Inmaculada". Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <a href="https://wa.me/51910880934?text=Hola%20Instituto%20Excelencia,%20quiero%20más%20información" 
+        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+    <script>
+        const dropdownBtn = document.getElementById('dropdownBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        dropdownBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('show');
+        });
+        document.addEventListener('click', function(e) {
+            if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
