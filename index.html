@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>La Inmaculada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container"> <img src="img\logo inmaculada.png" alt="logo" style="width: 70px;">
+            <div class="logo">La Inmaculada</div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-dropdown">
+                <button id="dropdownBtn" class="dropdown-btn" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="dropdownMenu" class="dropdown-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-flex">
+            <div class="hero-text">
+                <h1>"La Inmaculada" te da la bienvenida</h1>
+                <p>Somos una institución educativa líder en formación integral, innovación y excelencia académica. Nuestro objetivo es preparar ciudadanos responsables y comprometidos con el desarrollo de la sociedad.</p>
+                <a href="programas.html" class="btn hero-btn">Ver Programas</a>
+            </div>
+            <div class="hero-img">
+                <img src="img\AFICHE.png" alt="Campus moderno" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mission and Vision Section -->
+    <section class="mission-vision-section">
+        <div class="container mission-vision-grid">
+            <div class="mv-card">
+                <img src="img\mision.jpg" alt="Misión educativa" />
+                <h3>Misión</h3>
+                <p>La I.E. “La Inmaculada”, aspira al 2026, ser una institución educativa Líder y de Calidad en la Provincia de Sánchez Carrión, con la práctica de un currículo pertinente y relevante, con una gestión eficaz y eficiente, con docentes con vocación de servicio y estudiantes proactivos y gestores de su transcendencia personal y profesional y que conlleven al desarrollo de su entorno familiar y social.</p>
+            </div>
+            <div class="mv-card">
+                <img src="img\vision.jpg" alt="Visión educativa" />
+                <h3>Visión</h3>
+                <p>Somos una Institución Educativa que brinda un servicio integral y significativo; forma estudiantes responsables, respetuosos, solidarios, honestos y proactivos, promoviendo el desarrollo de sus competencias, imparte una cultura ambiental, prevención de riesgos y el respeto a la interculturalidad a través de un sistema curricular diversificado y efectivo, con docentes idóneos e innovadores, con una gestión óptima y el compromiso y participación activa de los padres de familia. En un marco de Cultura de Paz.</p>
+            </div>
+            <div class="mv-card">
+                <img src="img\valores.jpg" alt="Valores institucionales" />
+                <h3>Valores</h3>
+                <ul>
+                    <li>Respeto</li>
+                    <li>Responsabilidad</li>
+                    <li>Solidaridad</li>
+                    <li>Innovación</li>
+                    <li>Honestidad</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios Educativos</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="img\niña inicial.jpg" alt="Inicial" />
+                    <h3>Educación Inicial</h3>
+                    <p>Ambiente seguro y estimulante para los más pequeños con docentes especializados y actividades lúdicas que potencian el desarrollo emocional y cognitivo.</p>
+                </div>
+                <div class="service-card">
+                    <img src="img\primaria.jpg" alt="Primaria" />
+                    <h3>Educación Primaria</h3>
+                    <p>Formación integral con énfasis en valores, creatividad y pensamiento crítico. Programas de ciencias, comunicación, arte y deportes para una base sólida.</p>
+                </div>
+                <div class="service-card">
+                    <img src="img\secundaria.jpg" alt="Secundaria" />
+                    <h3>Educación Secundaria</h3>
+                    <p>Preparación académica y personal para los retos del futuro, orientación vocacional, tecnología y formación ciudadana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo" style="color: white;">La Inmaculada</div>
+            <p>Formando líderes para el mañana</p>
+            
+            <div class="social-links">
+                <a href="https://web.facebook.com/anonimo732022" target="_blank" class="social-icon-fb" aria-label="Síguenos en Facebook">
+                    <i class="fab fa-facebook-f"></i>
+            </div>
+            
+            <p class="copyright">© 2025 I.E "La Inmaculada". Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <a href="https://wa.me/51910880934?text=Hola%20Instituto%20Excelencia,%20quiero%20más%20información" 
+        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+    
+    <script>
+        const dropdownBtn = document.getElementById('dropdownBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        dropdownBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('show');
+        });
+        document.addEventListener('click', function(e) {
+            if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
+
